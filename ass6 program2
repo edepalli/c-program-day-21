@@ -1,0 +1,24 @@
+//print odd numbers b/w range and skip 3rd number
+#include<stdio.h>
+void main()
+{
+	int i,n1,n2,cnt=0;
+	printf("\nENTER N1 NUMBER:");
+	scanf("%d",&n1);
+	printf("\nENTER N2 NUMBER:");
+	scanf("%d",&n2);
+	printf("\nODD NUMBERS:");
+	for(i=n1;i<=n2;i++)
+	{
+		if((i%2)!=0)
+	     {	
+			 cnt++;
+			 if((cnt)==3)
+			 {
+			    continue;
+		     }
+		    printf(" %d",i);
+	      }
+	}
+
+}
