@@ -1,0 +1,16 @@
+// print nth multiplication
+#include<stdio.h>
+int main()
+{ 
+  int a,i,c,n;
+  printf("enter which table number you want:");
+  scanf("%d",&a);
+  printf("enter table limit:");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++)
+  { 
+    c=a*i;
+    printf("\n%d X %d=%d",a,i,c);
+  }
+  return 0;
+}
